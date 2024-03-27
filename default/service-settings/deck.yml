@@ -1,0 +1,6 @@
+artifactId: quay.io/opsmxpublic/ubi8-oes-deck:1.28.1_3.9.1_4.0.2
+env:
+  API_HOST: http://spin-gate:8084
+kubernetes:
+  podAnnotations:
+    moniker.spinnaker.io/application: spin

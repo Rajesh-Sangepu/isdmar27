@@ -1,0 +1,11 @@
+artifactId: quay.io/opsmxpublic/ubi8-spin-clouddriver:1.28.1_5.76.2_4.0.2
+kubernetes:
+  volumes:
+  - id: oes-cacerts
+    type: secret
+    mountPath: /etc/pki/ca-trust/extracted/java
+  podAnnotations:
+    moniker.spinnaker.io/application: spin
+
+env: 
+  JAVA_OPTS: "-XX:MaxRAMPercentage=100.0"
